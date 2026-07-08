@@ -4,8 +4,8 @@ def word_guessing_game():
         return ' '.join([letter if letter in guessed_letters else '_' for letter in word])
     
     def get_allowed_guesses(word):
-        unique_letters = len(set(word.lower()))
-        return unique_letters + 2
+        letters_in_word = set(word.lower())
+        return len(letters_in_word) + 2
     
     def play_round(guesser, giver):
         word = ""
