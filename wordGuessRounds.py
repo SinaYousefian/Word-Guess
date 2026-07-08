@@ -64,6 +64,4 @@ def word_guessing_game():
         else:
             current_guesser, current_giver = current_giver, current_guesser
 
-if __name__ == "__main__":
-    word_guessing_game()
-
+word_guessing_game()
