@@ -59,7 +59,7 @@ def word_guessing_game():
         winner, loser = play_round(current_guesser, current_giver)
         
         if winner == current_giver:
-            print(f"\n🎉 Game Over! {winner} wins! {loser} loses!")
+            print(f"\n🎉🎉🎉 Game Over! {winner} wins! {loser} loses!")
             break
         else:
             current_guesser, current_giver = current_giver, current_guesser
