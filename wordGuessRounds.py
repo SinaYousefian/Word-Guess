@@ -39,6 +39,7 @@ def word_guessing_game():
                 guesses_left -= 1
                 print(f"Wrong! {guess} is not in the word.")
             else:
+                guesses_left -= 1
                 print(f"Correct! {guess} is in the word.")
             
             if all(letter in guessed_letters for letter in word):
@@ -58,8 +59,8 @@ def word_guessing_game():
         print(f"\n*** {current_guesser} vs {current_giver} ***")
         winner, loser = play_round(current_guesser, current_giver)
         
-        if winner == current_giver:
-            print(f"\n🎉🎉🎉 Game Over! {winner} wins! {loser} loses!")
+        if loser == current_guesser:
+            print(f"\n🎉🎉🎉 Game Over! {winner} wins! and {loser} loses!")
             break
         else:
             current_guesser, current_giver = current_giver, current_guesser
