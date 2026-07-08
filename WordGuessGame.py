@@ -60,7 +60,7 @@ def word_guessing_game():
         winner, loser = play_round(current_guesser, current_giver)
         
         if loser == current_guesser:
-            stars = "*" * 9
+            stars = "*" * 8
             print(f"\n{stars} Game Over! {stars}\n\t  {winner} wins!\n\t  {loser} loses!")
             input(f"\n\nPress Enter to close the game...")
             break
