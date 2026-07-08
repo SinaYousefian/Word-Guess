@@ -61,6 +61,7 @@ def word_guessing_game():
         
         if loser == current_guesser:
             print(f"\n🎉🎉🎉 Game Over! {winner} wins! and {loser} loses!")
+            input("Press Enter to close the game...")
             break
         else:
             current_guesser, current_giver = current_giver, current_guesser
